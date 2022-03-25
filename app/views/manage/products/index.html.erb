@@ -1,1 +1,31 @@
-fucking hell
+<table class="table">
+  <thead>
+    <tr>
+      <th>상품 ID</th>
+      <th>썸네일</th>
+      <th>상품명</th>
+      <th>판매가</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% Product.all.each do |product| %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= image_tag product.thumbnail_image, style: "width: 80px; height: 80px; object-fit: cover;", class: "img-thumbnail" %></td>
+        <td><%= product.name %></td>
+        <td>
+          <div class="list-group">
+            <% product.tiers.each do |tier| %>
+              <div class="list-group-item">
+                <div class="badge bg-secondary"><%= tier.name %></div>
+                <div>
+                  <%= tier.price %>원
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
