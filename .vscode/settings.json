@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "*.html.erb": "erb"
+  },
+  "cSpell.words": ["Kakao"],
+  "editor.defaultFormatter": "Glavin001.unibeautify-vscode",
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "erb": "html"
+  }
+}
