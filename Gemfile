@@ -58,3 +58,4 @@ gem "rails_admin"
 gem "tailwindcss-rails", "~> 2.0"
 gem "image_processing", ">= 1.2"
 gem 'bootstrap', '~> 5.1.3'
+gem "bcrypt"

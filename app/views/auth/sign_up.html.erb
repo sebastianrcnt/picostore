@@ -1,0 +1,22 @@
+<%= form_with scope: "email_user", url: "/auth/create_user_with_email_and_password", method: :post do |form| %>
+  <div class="mb-3">
+    <%= form.label :email, "이메일", class: "form-label" %>
+    <%= form.email_field :email, class: "form-control" %>
+    <div class="form-text">이메일을 입력하세요</div>
+  </div>
+  <div class="mb-3">
+    <%= form.label :password, "비밀번호", class: "form-label" %>
+    <%= form.password_field :password, class: "form-control" %>
+    <div class="form-text">비밀번호를 입력하세요</div>
+  </div>
+  <div class="mb-3">
+    <%= form.label :password_again, "비밀번호 확인", class: "form-label" %>
+    <%= form.password_field :password_again, class: "form-control" %>
+    <div class="form-text">비밀번호를 다시 입력해주세요</div>
+  </div>
+  <div class="mb-3">
+    <%= form.label :name, "이름", class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <%= form.submit "회원가입하기", class: "btn btn-primary float-right" %>
+<% end %>
