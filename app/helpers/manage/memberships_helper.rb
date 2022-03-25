@@ -1,0 +1,2 @@
+module Manage::MembershipsHelper
+end
