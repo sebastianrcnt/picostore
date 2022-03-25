@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_25_063050) do
+ActiveRecord::Schema.define(version: 2022_03_25_064108) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -38,6 +38,48 @@ ActiveRecord::Schema.define(version: 2022_03_25_063050) do
     t.integer "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "product_tiers", force: :cascade do |t|
+    t.string "name"
+    t.integer "product_id"
+    t.integer "price"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.integer "default_tier_id"
+    t.boolean "has_sales_limit"
+    t.integer "sales_limit"
+    t.boolean "creates_license_key"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "promotion_codes", force: :cascade do |t|
+    t.integer "product_id"
+    t.string "code"
+    t.integer "quantity"
+    t.integer "used_quantity"
+    t.integer "discount_type"
+    t.float "discount_rate"
+    t.integer "discount_price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "social_kakao_identifier"
+    t.string "name"
+    t.string "password_hash"
+    t.boolean "is_email_verified"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

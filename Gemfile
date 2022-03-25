@@ -57,3 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "rails_admin"
 gem "tailwindcss-rails", "~> 2.0"
 gem "image_processing", ">= 1.2"
+gem 'bootstrap', '~> 5.1.3'
