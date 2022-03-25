@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   post "auth/create_user_with_email_and_password"
 
   namespace :manage do
-    resource :products
+    resources :products
   end
 end
