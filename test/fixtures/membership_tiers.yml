@@ -5,11 +5,17 @@ one:
   description: MyString
   payment_period: 1
   membership_id: 1
-   : MyString
+  monthly_price: 1
+  monthly3_price: 1
+  monthly6_price: 1
+  yearly_price: 1
 
 two:
   name: MyString
   description: MyString
   payment_period: 1
   membership_id: 1
-   : MyString
+  monthly_price: 1
+  monthly3_price: 1
+  monthly6_price: 1
+  yearly_price: 1

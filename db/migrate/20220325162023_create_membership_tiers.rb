@@ -5,7 +5,10 @@ class CreateMembershipTiers < ActiveRecord::Migration[6.1]
       t.string :description
       t.integer :payment_period
       t.integer :membership_id
-      t.string : 
+      t.integer :monthly_price
+      t.integer :monthly3_price
+      t.integer :monthly6_price
+      t.integer :yearly_price
 
       t.timestamps
     end
