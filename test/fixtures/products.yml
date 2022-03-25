@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  default_tier_id: 1
+  has_sales_limit: false
+  sales_limit: 1
+  creates_license_key: false
+
+two:
+  name: MyString
+  description: MyText
+  default_tier_id: 1
+  has_sales_limit: false
+  sales_limit: 1
+  creates_license_key: false
