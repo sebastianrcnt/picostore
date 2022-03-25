@@ -1,0 +1,2 @@
+class AudienceGroupToMembershipSubscription < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class AudienceGroup < ApplicationRecord
+end

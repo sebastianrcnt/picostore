@@ -1,0 +1,2 @@
+class MembershipTier < ApplicationRecord
+end

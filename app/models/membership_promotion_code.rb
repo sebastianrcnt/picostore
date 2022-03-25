@@ -1,0 +1,2 @@
+class MembershipPromotionCode < ApplicationRecord
+end

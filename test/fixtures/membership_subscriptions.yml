@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  membership_id: 1
+  membership_tier_id: 1
+  membership_promotion_code_id: 1
+  next_purchase_time: 2022-03-26 01:06:21
+  payment_period: MyString
+  integer: MyString
+  price_per_period: 1
+  active: false
+  subscriber_id: 1
+  subscriber_email: MyString
+  subscriber_initial_password: MyString
+
+two:
+  membership_id: 1
+  membership_tier_id: 1
+  membership_promotion_code_id: 1
+  next_purchase_time: 2022-03-26 01:06:21
+  payment_period: MyString
+  integer: MyString
+  price_per_period: 1
+  active: false
+  subscriber_id: 1
+  subscriber_email: MyString
+  subscriber_initial_password: MyString

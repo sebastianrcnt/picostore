@@ -3,15 +3,9 @@
 one:
   name: MyString
   description: MyText
-  default_tier_id: 1
-  creates_license_key: false
-  price: 1
-  store_id: 1
+  owner_id: 1
 
 two:
   name: MyString
   description: MyText
-  default_tier_id: 1
-  creates_license_key: false
-  price: 1
-  store_id: 1
+  owner_id: 1

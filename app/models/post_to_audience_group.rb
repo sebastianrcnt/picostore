@@ -1,0 +1,2 @@
+class PostToAudienceGroup < ApplicationRecord
+end

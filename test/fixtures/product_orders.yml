@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_id: 1
+  product_tier_id: 1
+  product_promotion_code_id: 1
+  quantity: 1
+  price: 1
+  orderer_id: 1
+  orderer_email: MyString
+  orderer_initial_password: MyString
+
+two:
+  product_id: 1
+  product_tier_id: 1
+  product_promotion_code_id: 1
+  quantity: 1
+  price: 1
+  orderer_id: 1
+  orderer_email: MyString
+  orderer_initial_password: MyString

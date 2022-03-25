@@ -2,14 +2,20 @@
 
 one:
   email: MyString
-  social_kakao_identifier: MyString
   name: MyString
   password_hash: MyString
   is_email_verified: false
+  authentication_strategy_type: 1
+  payback_bank: MyString
+  payback_bank_account: MyString
+  balance: 1
 
 two:
   email: MyString
-  social_kakao_identifier: MyString
   name: MyString
   password_hash: MyString
   is_email_verified: false
+  authentication_strategy_type: 1
+  payback_bank: MyString
+  payback_bank_account: MyString
+  balance: 1

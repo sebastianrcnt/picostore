@@ -1,0 +1,2 @@
+class MembershipSubscriptionPayment < ApplicationRecord
+end

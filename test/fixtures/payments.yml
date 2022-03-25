@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pg: MyString
+  pay_method: MyString
+  merchant_pid: MyString
+  name: MyString
+  amount: 1
+  buyer_email: MyString
+  buyer_name: MyString
+  buyer_tel: MyString
+  buyer_addr: MyString
+  buyer_postcode: MyString
+  imp_uid: MyString
+  is_amount_validated: false
+
+two:
+  pg: MyString
+  pay_method: MyString
+  merchant_pid: MyString
+  name: MyString
+  amount: 1
+  buyer_email: MyString
+  buyer_name: MyString
+  buyer_tel: MyString
+  buyer_addr: MyString
+  buyer_postcode: MyString
+  imp_uid: MyString
+  is_amount_validated: false

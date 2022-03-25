@@ -5,7 +5,7 @@ one:
   description: MyText
   default_tier_id: 1
   creates_license_key: false
-  price: 1
+  c: MyString
   store_id: 1
 
 two:
@@ -13,5 +13,5 @@ two:
   description: MyText
   default_tier_id: 1
   creates_license_key: false
-  price: 1
+  c: MyString
   store_id: 1
