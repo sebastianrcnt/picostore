@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   get "auth/logout"
   get "auth/get_session"
   post "auth/create_user_with_email_and_password"
+
+  namespace :manage do
+    resource :products
+  end
 end

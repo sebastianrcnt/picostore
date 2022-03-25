@@ -32,7 +32,7 @@ class AuthController < ApplicationController
             set_current_user_id @user.id
             redirect_to :root
         else
-            flash[:error] = "이메일 패스워드 문제가 있습니다"
+            flash[:error] = "인증 정보가 틀립니다1"
             redirect_to action: :login
         end
     end
