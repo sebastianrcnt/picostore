@@ -1,0 +1,18 @@
+<div>
+  currentuser: <%= get_current_user %>
+</div>
+<div>
+  currentuserid: <%= get_current_user_id %>
+</div>
+<div>
+  isloggedin: <%= is_logged_in %>
+</div>
+<div class="card">
+  <div class="card-header">Dev Mode</div>
+  <div class="card-body">
+    <li><a href="/auth/login">Login</a></li>
+    <li><a href="/auth/sign_up">Signup</a></li>
+    <li><a href="/auth/logout">Logout</a></li>
+    <li><a href="/auth/get_session">session</a></li>
+  </div>
+</div>
