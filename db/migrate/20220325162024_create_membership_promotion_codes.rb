@@ -1,7 +1,7 @@
 class CreateMembershipPromotionCodes < ActiveRecord::Migration[6.1]
   def change
     create_table :membership_promotion_codes do |t|
-      t.integer :product_id
+      t.integer :membership_id
       t.string :code
       t.integer :quantity
       t.integer :used_quantity

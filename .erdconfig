@@ -1,0 +1,3 @@
+attributes: "foreign_keys,primary_keys,timestamps,inheritance,content"
+exclude: "ActiveStorage::Attachment,ActiveStorage::Blob,ActiveStorage::VariantRecord"
+indirect: true

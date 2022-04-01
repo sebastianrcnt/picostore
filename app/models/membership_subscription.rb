@@ -5,4 +5,5 @@ class MembershipSubscription < ApplicationRecord
     belongs_to :subscriber, foreign_key: "subscriber_id", class_name: "User", inverse_of: :membership_subscriptions
     has_many :audience_group_to_membership_subscriptions
     has_many :audience_groups, through: :audience_group_to_membership_subscriptions
+    has_many :membership_subscription_payments
 end

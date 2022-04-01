@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2022_03_25_162255) do
   end
 
   create_table "membership_promotion_codes", force: :cascade do |t|
-    t.integer "product_id"
+    t.integer "membership_id"
     t.string "code"
     t.integer "quantity"
     t.integer "used_quantity"
@@ -142,7 +142,7 @@ ActiveRecord::Schema.define(version: 2022_03_25_162255) do
 
   create_table "post_to_audience_groups", force: :cascade do |t|
     t.integer "post_id"
-    t.integer "audience_id"
+    t.integer "audience_group_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
