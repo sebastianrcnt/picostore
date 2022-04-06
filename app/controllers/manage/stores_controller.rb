@@ -1,5 +1,7 @@
 class Manage::StoresController < ApplicationController
-  def show
+  layout "manage"
+  
+  def my
   end
 
   def edit

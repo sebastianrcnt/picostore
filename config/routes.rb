@@ -48,7 +48,7 @@ Rails.application.routes.draw do
     get 'memberships/preview'
   end
   namespace :manage do
-    get 'stores/show'
+    get 'stores/my'
     get 'stores/edit'
   end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

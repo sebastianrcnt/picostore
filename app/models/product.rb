@@ -6,6 +6,6 @@ class Product < ApplicationRecord
   has_many :product_promotion_codes
   has_many :product_tiers
 
-  belongs_to :default_tier, foreign_key: "default_tier_id", class_name: "ProductTier"
+  belongs_to :default_tier, foreign_key: "default_tier_id", class_name: "ProductTier", optional: true
   belongs_to :store
 end

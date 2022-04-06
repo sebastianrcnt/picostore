@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>picostore</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %><!-- UIkit CSS -->
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <main class="container flex flex-row">
+      <%= render partial: "shared/flash" %>
+      <%
+=begin%>
+ <%= render partial: "shared/debug" %>  
+<%
+=end%>
+    <nav class="">
+      <ul class="p-4">
+        <li class="text-green"><a href="/manage/stores/my">내 스토어 관리</a></li>
+        <li class="text-green"><a href="/manage/products">상품 관리</a></li>
+        <li class="text-green"><a href="/manage/memberships">구독 관리</a></li>
+      </ul>
+    </nav>
+    <div>
+      <%= yield %>
+    </div>
+    </main>
+  </body>
+</html>

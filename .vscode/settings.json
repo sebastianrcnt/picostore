@@ -1,6 +1,6 @@
 {
   "files.associations": {
-    "*.html.erb": "erb"
+    "*.html.erb": "html.erb"
   },
   "cSpell.words": ["Kakao"],
   "editor.defaultFormatter": "Glavin001.unibeautify-vscode",
@@ -12,6 +12,29 @@
   },
   "editor.formatOnSave": true,
   "emmet.includeLanguages": {
-    "erb": "html"
-  }
+    "erb": "html",
+    "html.erb": "html"
+  },
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "html.erb",
+  ]
 }
