@@ -11,7 +11,7 @@ class User < ApplicationRecord
       kakao: 1
     }
 
-    has_many :stores, foreign_key: "store_id", inverse_of: :owner, class_name: "Store"
+    has_many :stores, inverse_of: :owner, class_name: "Store", foreign_key: "owner_id"
     has_many :membership_subscriptions, foreign_key: "subscriber_id", class_name: "MembershipSubscription", inverse_of: :subscriber
     has_many :payouts
     has_many :product_orders, foreign_key: "orderer_id", class_name: "ProductOrder", inverse_of: :orderer

@@ -40,19 +40,6 @@ ActiveRecord::Schema.define(version: 2022_03_25_162255) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "audience_group_to_membership_subscriptions", force: :cascade do |t|
-    t.integer "audience_group_id"
-    t.integer "membership_subscription_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "audience_groups", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "membership_promotion_codes", force: :cascade do |t|
     t.integer "membership_id"
     t.string "code"
@@ -136,20 +123,6 @@ ActiveRecord::Schema.define(version: 2022_03_25_162255) do
     t.datetime "starts_from"
     t.datetime "ends_at"
     t.datetime "paid_at"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "post_to_audience_groups", force: :cascade do |t|
-    t.integer "post_id"
-    t.integer "audience_group_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

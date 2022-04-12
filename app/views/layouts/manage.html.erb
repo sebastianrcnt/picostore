@@ -15,23 +15,19 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <main class="container flex flex-row">
+    <main class="container flex flex-col">
       <%= render partial: "shared/flash" %>
-      <%
-=begin%>
- <%= render partial: "shared/debug" %>  
-<%
-=end%>
-    <nav class="">
-      <ul class="p-4">
-        <li class="text-green"><a href="/manage/stores/my">내 스토어 관리</a></li>
-        <li class="text-green"><a href="/manage/products">상품 관리</a></li>
-        <li class="text-green"><a href="/manage/memberships">구독 관리</a></li>
-      </ul>
-    </nav>
-    <div>
-      <%= yield %>
-    </div>
+      <%= render partial: "shared/debug" %>  
+      <nav style="min-width: 30%;">
+        <ul class="p-4">
+          <li class="text-green"><a href="/manage/stores/my">내 스토어 관리</a></li>
+          <li class="text-green"><a href="/manage/products">상품 관리</a></li>
+          <li class="text-green"><a href="/manage/memberships">구독 관리</a></li>
+        </ul>
+      </nav>
+      <div>
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
