@@ -37,6 +37,9 @@ Rails.application.routes.draw do
     get 'membership_subscriptions/show'
   end
   namespace :manage do
+    get 'products', to: 'products#index'
+  end
+  namespace :manage do
     get 'product_orders/index'
     get 'product_orders/show'
   end

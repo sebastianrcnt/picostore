@@ -8,22 +8,24 @@
     </tr>
   </thead>
   <tbody>
-    <% Product.all.each do |product| %>
+    <% @my_store_products.each do |product| %>
       <tr>
-        <td><%= product.id %></td>
-        <td><%= image_tag product.thumbnail_image, style: "width: 80px; height: 80px; object-fit: cover;", class: "img-thumbnail" %></td>
-        <td><%= product.name %></td>
         <td>
-          <div class="list-group">
-            <% product.tiers.each do |tier| %>
-              <div class="list-group-item">
-                <div class="badge bg-secondary"><%= tier.name %></div>
-                <div>
-                  <%= tier.price %>원
-                </div>
-              </div>
+          <%= product.id %>
+        </td>
+        <td>
+          <%= product.thumbnail_image %>
+        </td>
+        <td>
+          <%= product.name %>
+        </td>
+        <td>
+          <%= product.product_tiers %>
+          <ul>
+            <% product.product_tiers.each do |tier|%>
+              <li><%= tier %></li>
             <% end %>
-          </div>
+          </ul>
         </td>
       </tr>
     <% end %>
